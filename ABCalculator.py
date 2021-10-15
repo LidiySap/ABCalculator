@@ -13,7 +13,7 @@ def popup_window():
     window.title("A/B результат")
     
     # Добавление кнопки закрытия окна
-    btnClosePopup = tk.Button(root, text = "Закрыть", font = ('Helvetica', 10, 'bold'), command=window.destroy)
+    btnClosePopup = tk.Button(window, text = "Закрыть", font = ('Helvetica', 10, 'bold'), command=window.destroy)
     btnClosePopup.place(x=160, y=250, width=90, height=30)
 
 # Создание главного окна
@@ -22,11 +22,11 @@ root.geometry("280x300")
 root.title("A/B калькулятор")
 
 # Добавление метки заголовка
-lblTitle = tk.Label(text = "A/B калькулятор", font = ('Helvetica', 16, 'bold'), fg = '#0000cc')
+lblTitle = tk.Label(text = "A/B калькулятор", font = ('Helvetica', 16, 'bold'), fg = '#4b0082')
 lblTitle.place(x=55, y=20)
 
 # Добавление метки заголовка контрольной группы
-lblTitle = tk.Label(text = "Контрольная группа", font = ('Helvetica', 12, 'bold'), fg = '#0066ff')
+lblTitle = tk.Label(text = "Контрольная группа", font = ('Helvetica', 12, 'bold'), fg = '#ff00ff')
 lblTitle.place(x=25, y=55)
 
 # Добавление полей ввода контрольной группы
@@ -43,7 +43,7 @@ entConversions1 = tk.Entry(font = ('Helvetica', 10, 'bold'))
 entConversions1.place(x=115, y=115, width=90, height=20)
 
 # Добавление метки заголовка тестовой группы
-lblTitle2 = tk.Label(text = "Тестовая группа", font = ('Helvetica', 12, 'bold'), fg = '#008800')
+lblTitle2 = tk.Label(text = "Тестовая группа", font = ('Helvetica', 12, 'bold'), fg = '#9400d3')
 lblTitle2.place(x=25, y=145)
 
 # Добавление полей ввода тестовой группы
